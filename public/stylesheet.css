@@ -1,0 +1,52 @@
+* {
+    font-family: 'Libre Franklin';
+    font-size: 16px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow: hidden;
+}
+.background { 
+    position: absolute; 
+    min-height: var(--original-viewport-height);
+    width: 100%; 
+    background-image: url("./images/keyboard.jpg"); 
+    background-size: cover; 
+    /* background-size: auto 100%; */
+    background-position: center;
+    filter: blur(2px); 
+    z-index: -1; 
+} 
+.color-green{
+    color: #beee11;
+    background-color: #4c6b22;
+}
+.color-green:hover {
+    background-color: #98bf0d;
+    color: white;
+}
+.title {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 150px;
+}
+.title2 {
+    color: #beee11;
+    text-shadow: 2px 2px 2px black;
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    top: -16%;
+}
+.logo-crossover {
+    font-size: 35px;  
+    vertical-align: middle;
+}
+.data-background {
+    background-color: #beee11;
+    border: 3px solid white;
+    text-align: center;
+}

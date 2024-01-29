@@ -1,0 +1,2 @@
+# Steam Spotlight
+Website that utilizes Steam's API to request information about a user's profile picture, amount of games owned, amount of games recently played, and specific games recently played using their SteamID

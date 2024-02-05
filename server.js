@@ -8,7 +8,7 @@ app.use(express.json());
 const cors=require("cors");
 const corsOptions ={
    origin:'*', 
-   credentials:true,            //access-control-allow-credentials:true
+   credentials:true,            // access-control-allow-credentials:true
    optionSuccessStatus:200,
 }
 
@@ -16,6 +16,7 @@ app.use(cors(corsOptions))
 
 steamKey = ''; // ENTER YOUR STEAM API KEY
 
+// request profile picture
 app.post('/steamprofile', (req, res) => {
     steamId = req.body.parcel;
     axios.get('https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=' + steamKey + '&steamids=' + steamId)
@@ -28,7 +29,7 @@ app.post('/steamprofile', (req, res) => {
     });
 })
 
-//request recently played games amount
+// request recently played games amount
 app.post('/gamecount', (req, res) => {
     steamId = req.body.parcel;
     axios.get('https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=' + steamKey + '&steamid=' + steamId + '&format=json')
@@ -41,7 +42,7 @@ app.post('/gamecount', (req, res) => {
     });
 })
 
-//request recently played games
+// request recently played games
 app.post('/recentlyplayed', (req, res) => {
     steamId = req.body.parcel;
     axios.get('https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=' + steamKey + '&steamid=' + steamId + '&format=json')
@@ -55,7 +56,7 @@ app.post('/recentlyplayed', (req, res) => {
 })
 
 
-// Start the server
+// start the server
 const port = 5000;
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);

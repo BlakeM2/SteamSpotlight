@@ -1,0 +1,120 @@
+#root {
+  display: flex;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+form .search-button {
+  margin-top: 1rem;
+  width: 5rem;
+  height: 2rem;
+  background-color: #15F5BA;
+  border: 1px black solid;
+  border-radius: 1rem;
+}
+form .search-button:hover {
+  cursor: pointer;
+}
+form .search-bar {
+  height: 2.5rem;
+  width: 20rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-top: 6rem;
+}
+.grid-recently-played {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: center;
+}
+.recently-played {
+  background-color: #836FFF;
+  max-width: 15rem;
+  border: 1px #F0F3FF solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  color: #F0F3FF;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.recently-played p {
+  margin: 0;
+}
+.profile-picture {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+}
+.rounded-image {
+  border-radius: 1rem;
+  border: 1px #F0F3FF solid;
+  width: 100%;
+}
+.grid-total-games {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+}
+.total-games {
+  background-color: #836FFF;
+  width: 100%;
+  border: 1px #F0F3FF solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  color: #F0F3FF;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.total-games p {
+  margin: 0;
+}
+.games-number {
+  font-size: 2rem;
+}
+.grid-gamelist {
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #836FFF;
+  border-radius: 1rem;
+  border: 1px #F0F3FF solid;
+}
+.grid-gamelist img {
+  margin-top: 0.25rem;
+  padding-right: 0.3rem;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  color: #F0F3FF;
+  display: flex;
+  align-items: center;
+}
